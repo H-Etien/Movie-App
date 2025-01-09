@@ -12,7 +12,7 @@ const MovieCard = ({ movie }) => {
         if (favorite) {
             removeFromFavorites(movie.id);
         } else {
-            addToFavorites(movie.id);
+            addToFavorites(movie);
         }
     }
     const release_date_year = movie.release_date.split("-")[0];

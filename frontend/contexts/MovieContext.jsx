@@ -19,20 +19,20 @@ export const MovieProvider = ({ children }) => {
         localStorage.setItem("favorites", JSON.stringify(favorites));
     }, [favorites]);
 
-    const addToFavorites = (movieId) => {
+    const addToFavorites = (movie) => {
         setFavorites((prev) => {
-            return [...prev, movieId];
+            return [...prev, movie];
         });
     };
 
     const removeFromFavorites = (movieId) => {
         setFavorites((prev) => {
-            return prev.filter((movie_id) => movie_id !== movieId);
+            return prev.filter((movie) => movie.id !== movieId);
         });
     };
 
     const isFavorite = (movieId) => {
-        return favorites.some((movie_id) => movie_id === movieId);
+        return favorites.some((movie) => movie.id === movieId);
     };
 
     const value = {
