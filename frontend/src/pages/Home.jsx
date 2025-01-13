@@ -56,13 +56,13 @@ const Home = () => {
                 <form onSubmit={handleSearch} className="search-form">
                     <input
                         type="text"
-                        placeholder="Search for movies ..."
+                        placeholder="Recherche nom de films ..."
                         className="search-input"
                         value={searchQuery}
                         onChange={(e) => setsearchQuery(e.target.value)}
                     />
                     <button type="submit" className="search-button">
-                        Search
+                        Recherche
                     </button>
                 </form>
 

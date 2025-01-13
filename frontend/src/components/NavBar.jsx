@@ -14,7 +14,7 @@ const NavBar = () => {
                         Home
                     </Link>
                     <Link to="/favorites" className="nav-link">
-                        Favorites
+                        Favoris
                     </Link>
                 </div>
             </div>
