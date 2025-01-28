@@ -1,4 +1,4 @@
-# Nom du projet
+# Movie-App
 
 React web app allows users to browse movies from an API and add them to a favorites list. Users can view movie details and manage their favorites, which are stored locally in the browser.
 
